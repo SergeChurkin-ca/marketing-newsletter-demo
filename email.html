@@ -90,14 +90,6 @@ font-family: Arial, serif !important;
         }
     </style>
     <style>
-        .inner_table {
-            border: solid 1px red;
-        }
-        
-        table {
-            border: solid 1px blue;
-        }
-        
         a {
             color: #000000
         }
@@ -153,6 +145,14 @@ font-family: Arial, serif !important;
                 width: 90% !important;
                 margin: 0 auto !important;
             }
+            .inner_table2 {
+                width: 100% !important;
+                margin: 0 auto !important;
+            }
+            .mobileimg {
+                width: 100% !important;
+                height: auto !important
+            }
             .logomob {
                 max-width: 90% !important;
                 margin: 0 auto !important;
@@ -187,15 +187,8 @@ font-family: Arial, serif !important;
             .top_pad {
                 padding-top: 20px !important;
             }
-            .top_pad1 {
-                padding-top: 30px !important;
-            }
             .btm_pad {
                 padding-bottom: 20px;
-            }
-            .mobileimg {
-                width: 100%;
-                height: auto !important
             }
             .imgmaxwidth {
                 width: 590px !important;
@@ -256,6 +249,24 @@ font-family: Arial, serif !important;
                 width: 90%;
                 max-width: 400px;
                 margin: 0 auto;
+            }
+            .top_pad1 {
+                padding-top: 30px !important;
+            }
+            .hidden740 {
+                display: none !important;
+            }
+        }
+        
+        @media only screen and (max-width: 780px) {
+            .block780 {
+                display: block;
+                width: 90%;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+            .hidden780 {
+                display: none !important;
             }
         }
         
@@ -557,15 +568,12 @@ font-family: Arial, serif !important;
                                                                 </table>
                                                             </th>
                                                             <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-
                                                         </tr>
                                                     </table>
                                                 </td>
                                                 <td class="block740">
                                                     <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                         <tr>
-
-
                                                             <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
                                                             <th width="50" align="center" class="block400 top_pad" valign="middle" style="vertical-align: middle;text-align:center;width:50px;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
@@ -618,10 +626,8 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--Navbar-->
-
                             <!--Banner-->
                             <table class="mktoModule" mktoName="Banner" id="banner1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-
                                 <tr>
                                     <td class="banner-1" bgcolor="#f4f4f4" height="442" valign="top" style="background-color:#f4f4f4;background-image:url('./images/banner-3.png');background-repeat: no-repeat; background-size: cover;background-position:left;vertical-align:top;background-blend-mode: multiply;">
                                         <!--[if gte mso 9]>
@@ -744,7 +750,7 @@ font-family: Arial, serif !important;
                                     </td>
                                 </tr>
                             </table>
-                            <!--SubHeadline Module-->
+                            <!--PreHeadline Module-->
                             <!--Headline Module-->
                             <table class="mktoModule" mktoName="Headline Module" id="Headline" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
@@ -803,13 +809,13 @@ font-family: Arial, serif !important;
                                                 <td>
                                                     <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                         <tr>
-                                                            <th width="220" align="left" class="block" valign="top" style="vertical-align: top;">
+                                                            <th width="220" align="left" class="block740" valign="top" style="vertical-align: top;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                                     <tr>
                                                                         <td class="center" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                                                                                 <div>
-                                                                                    <img src="./images/img-1.jpg" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:220px;border-radius:3px;" />
+                                                                                    <img class="mobileimg" src=" ./images/img-1.jpg" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:220px;border-radius:3px;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -821,7 +827,8 @@ font-family: Arial, serif !important;
                                                                         <td class="center" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                                                                                 <div>
-                                                                                    <img src="./images/img-2.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:220px;border-radius:3px;" />
+                                                                                    <img class="mobileimg" src="./images/img-2.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;width:220px;border-radius:3px;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -829,14 +836,15 @@ font-family: Arial, serif !important;
 
                                                                 </table>
                                                             </th>
-                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-                                                            <th width="228" align="left" class="block top_pad1" valign="top" style="vertical-align: top;">
+                                                            <th class="hidden740" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                                                            <th width="228" align="left" class="block740 top_pad1" valign="top" style="vertical-align: top;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                                     <tr>
                                                                         <td class="center" align="left" style="font-size: 1px; line-height: 1px;">
                                                                             <div class="mktoImg" mktoname="Middle Image" id="leftImageb">
                                                                                 <div>
-                                                                                    <img src="./images/img-3.png" width="228" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:228px;border-radius:3px;" />
+                                                                                    <img class="mobileimg" src="./images/img-3.png" width="228" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;width:228px;border-radius:3px;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -844,14 +852,15 @@ font-family: Arial, serif !important;
 
                                                                 </table>
                                                             </th>
-                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-                                                            <th width="220" align="left" class="block top_pad1" valign="top" style="vertical-align: top;">
+                                                            <th class="hidden740" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                                                            <th width="220" align="left" class="block740 top_pad1" valign="top" style="vertical-align: top;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                                     <tr>
                                                                         <td class="center" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                                                                                 <div>
-                                                                                    <img src="./images/img-4.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:220px;border-radius:3px;" />
+                                                                                    <img class="mobileimg" src="./images/img-4.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;width:220px;border-radius:3px;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -863,7 +872,8 @@ font-family: Arial, serif !important;
                                                                         <td class="center" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
                                                                                 <div>
-                                                                                    <img src="./images/img-5.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;width:220px;border-radius:3px;" />
+                                                                                    <img class="mobileimg" src="./images/img-5.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;width:220px;border-radius:3px;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -883,7 +893,7 @@ font-family: Arial, serif !important;
                             </table>
                             <!--3 Col-->
                             <!--2 Col Module-->
-                            <table class="mktoModule" mktoName="Two Column with Image" id="twoColImg" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" id="twoColImg" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
                                     <td bgColor="#ff755e" valign="top" style="background-Color:#ff755e;vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
@@ -900,7 +910,8 @@ font-family: Arial, serif !important;
                                                                         <td class="left" width="40" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Image" id="leftImage-b">
                                                                                 <div>
-                                                                                    <img src="./images/glasses-logo.png" width="40" border="0" style="-ms-interpolation-mode:bicubic;width:40px;border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                                                                    <img src="./images/glasses-logo.png" width="40" border="0" style="-ms-interpolation-mode:bicubic;width:40px;border-collapse:collapse; padding:0px; margin:0px auto;
+                                                                                        border-spacing:0; display:block;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -932,7 +943,8 @@ font-family: Arial, serif !important;
                                                                         <td class="left" width="40" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Image" id="leftImage-b">
                                                                                 <div>
-                                                                                    <img src="./images/t-short-logo.png" width="40" border="0" style="-ms-interpolation-mode:bicubic;width:40px;border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                                                                    <img src="./images/t-short-logo.png" width="40" border="0" style="-ms-interpolation-mode:bicubic;width:40px;border-collapse:collapse; padding:0px; margin:0px auto;
+                                                                                        border-spacing:0; display:block;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -960,16 +972,18 @@ font-family: Arial, serif !important;
                                                             </th>
                                                         </tr>
                                                         <tr>
-                                                            <th width="340" align="left" class="block2" valign="top" style="vertical-align: top;">
+                                                            <td class="hidden2" height="40" style="line-height:1px;font-size:1px;height:40px;">&nbsp;</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th width="340" align="left" class="block2 top_pad" valign="top" style="vertical-align: top;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                                                    <tr>
-                                                                        <td height="40" style="line-height:1px;font-size:1px;height:40px;">&nbsp;</td>
-                                                                    </tr>
+
                                                                     <tr>
                                                                         <td class="left" width="40" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Image" id="leftImage-b">
                                                                                 <div>
-                                                                                    <img src="./images/hat-logo.png" width="40" border="0" style="-ms-interpolation-mode:bicubic;width:40px;border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                                                                    <img src="./images/hat-logo.png" width="40" border="0" style="-ms-interpolation-mode:bicubic;width:40px;border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -995,16 +1009,15 @@ font-family: Arial, serif !important;
                                                                 </table>
                                                             </th>
                                                             <th class="hidden2" style="font-size:1px; line-height: 1px;width:30px;" width="30">&nbsp;</th>
-                                                            <th width="340" align="left" class="block2" valign="top" style="vertical-align: top;">
+                                                            <th width="340" align="left" class="block2 top_pad" valign="top" style="vertical-align: top;">
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                                                    <tr>
-                                                                        <td height="40" style="line-height:1px;font-size:1px;height:40px;">&nbsp;</td>
-                                                                    </tr>
+
                                                                     <tr>
                                                                         <td class="left" width="40" align="left" valign="top" style="vertical-align: top;">
                                                                             <div class="mktoImg" mktoname="Image" id="leftImage-b">
                                                                                 <div>
-                                                                                    <img src="./images/scocks-logo.png" width="40" border="0" style="-ms-interpolation-mode:bicubic;width:40px;border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;" />
+                                                                                    <img src="./images/scocks-logo.png" width="40" border="0" style="-ms-interpolation-mode:bicubic;width:40px;border-collapse:collapse; padding:0px; margin:0px auto;
+                                                                                        border-spacing:0; display:block;" />
                                                                                 </div>
                                                                             </div>
                                                                         </td>
@@ -1041,6 +1054,374 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--2 Col Module-->
+                            <!--PreHeadline Module-->
+                            <table id="SubHeadline" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing:0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
+                                            <tr>
+                                                <td height="30" style="line-height:1px;font-size:1px;height:30px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:15px; font-weight:400;line-height: 145%; mso-line-height-rule: exactly; color:#ff755e;text-align: center;text-transform:
+                                                                                        uppercase;">
+                                                    <div class="mktoText" mktoName="SubHeadline" id="SubHeadline-text">
+                                                        <div>Lorem title</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="5" style="line-height:1px;font-size:1px;height:5px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--PreHeadline Module-->
+                            <!--Headline Module-->
+                            <table class="mktoModule" mktoName="Headline Module" id="Headline" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
+                                            <tr>
+                                                <td height="5" style="line-height:1px;font-size:1px;height:5px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:28px; font-weight:900;line-height: 145%; mso-line-height-rule: exactly; color:#374b53;text-align: center;text-transform:
+                                                                                        uppercase;">
+                                                    <div class="mktoText" mktoName="Headline" id="Headline-text2">
+                                                        <div>featured products</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="5" style="line-height:1px;font-size:1px;height:5px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Headline Module-->
+                            <!--SubHeadline Module-->
+                            <table class="mktoModule" mktoName="SubHeadline Module" id="SubHeadline" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing:0;" border="0
+                                                                                       " width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
+                                            <tr>
+                                                <td height="5" style="line-height:1px;font-size:1px;height:5px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:14px; font-weight:300;line-height: 145%; mso-line-height-rule: exactly; color:#374b53; text-align:center;">
+                                                    <div id="SubHeadline-text">
+                                                        <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="5" style="line-height:1px;font-size:1px;height:5px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--SubHeadline Module-->
+
+                            <!--3 Col-->
+                            <table class="mktoModule" mktoName="Three Columns Module" id="threeCol" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
+                                                                                       " width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
+                                            <tr>
+                                                <td height="20" style="line-height:1px;font-size:1px;height:20px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                        <tr>
+                                                            <th width="220" align="left" class="block780 top_pad1" valign="top" style="vertical-align: top;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td class="center" align="left" valign="top" style="vertical-align: top;">
+                                                                            <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                                                                                <div>
+                                                                                    <img src="./images/model-1a.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;width:220px;border-radius:3px;" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="line-height:1px;font-size:1px;height:10px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:12px; font-weight:400;line-height: 145%; mso-line-height-rule: exactly; color:#88979d; text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div>Clothing: Leather</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:16px; font-weight:500;line-height: 145%; mso-line-height-rule: exactly; color:#374b53; text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div>Modern Mens Wear</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif;line-height: 145%; mso-line-height-rule: exactly;text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div><span style="font-size:12px;font-weight:600;color:#88979d">$130</span>&nbsp;&nbsp;<span style="font-size:14px;font-weight:600;color:#ff755e;">$110</span></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="ht-20" height="10" style="line-height:1px;font-size:1px;height:10px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="mktoText" id="banner-btns" mktoname="Button">
+                                                                                <div>
+                                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td bgcolor="#ff755e" style="text-align: center; border:1px solid #ff755e; color:#ffffff; background-color:#ff755e;text-decoration:none;font-size:12px;font-weight:400;
+                                                                                        line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 15px 26px; border-radius:3px;">
+                                                                                                    <a style="text-decoration:none; color:#ffffff" href="#"><span style="font-size:12px;"> ▶</span>&nbsp;&nbsp;SHOP NOW</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                            <th class="hidden780" style="font-size:1px; line-height: 1px;width:20px;" width="20">&nbsp;</th>
+                                                            <th width="220" align="left" class="block780 top_pad1" valign="top" style="vertical-align: top;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td class="center" align="left" valign="top" style="vertical-align: top;">
+                                                                            <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                                                                                <div>
+                                                                                    <img src="./images/mode-2a.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;width:220px;border-radius:3px;" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="line-height:1px;font-size:1px;height:10px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:12px; font-weight:400;line-height: 145%; mso-line-height-rule: exactly; color:#88979d; text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div>Clothing: Casual</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:16px; font-weight:500;line-height: 145%; mso-line-height-rule: exactly; color:#374b53; text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div>Elegant Mens Wear</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif;line-height: 145%; mso-line-height-rule: exactly;text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div><span style="font-size:12px;font-weight:600;color:#88979d">$100</span>&nbsp;&nbsp;<span style="font-size:14px;font-weight:600;color:#ff755e;">$80</span></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="ht-20" height="10" style="line-height:1px;font-size:1px;height:10px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="mktoText" id="banner-btns" mktoname="Button">
+                                                                                <div>
+                                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td bgcolor="#ff755e" style="text-align: center; border:1px solid #ff755e; color:#ffffff; background-color:#ff755e;text-decoration:none;font-size:12px;font-weight:400;
+                                                                                        line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 15px 26px; border-radius:3px;">
+                                                                                                    <a style="text-decoration:none; color:#ffffff" href="#"><span style="font-size:12px;"> ▶</span>&nbsp;&nbsp;SHOP NOW</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                            <th class="hidden780" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                                                            <th width="220" align="left" class="block780 top_pad1" valign="top" style="vertical-align: top;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td class="center" align="left" valign="top" style="vertical-align: top;">
+                                                                            <div class="mktoImg" mktoname="Left Image" id="threeleftImagea">
+                                                                                <div>
+                                                                                    <img src="./images/mode-3a.png" width="220" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;width:220px;border-radius:3px;" />
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="line-height:1px;font-size:1px;height:10px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:12px; font-weight:400;line-height: 145%; mso-line-height-rule: exactly; color:#88979d; text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div>Clothing: Rock</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:16px; font-weight:500;line-height: 145%; mso-line-height-rule: exactly; color:#374b53; text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div>Rocky Mens Wear</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif;line-height: 145%; mso-line-height-rule: exactly;text-align:center;">
+                                                                            <div id="SubHeadline-text">
+                                                                                <div><span style="font-size:12px;font-weight:600;color:#88979d">$160</span>&nbsp;&nbsp;<span style="font-size:14px;font-weight:600;color:#ff755e;">$130</span></div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="ht-20" height="10" style="line-height:1px;font-size:1px;height:10px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="mktoText" id="banner-btns" mktoname="Button">
+                                                                                <div>
+                                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td bgcolor="#ff755e" style="text-align: center; border:1px solid #ff755e; color:#ffffff; background-color:#ff755e;text-decoration:none;font-size:12px;font-weight:400;
+                                                                                        line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 15px 26px; border-radius:3px;">
+                                                                                                    <a style="text-decoration:none; color:#ffffff" href="#"><span style="font-size:12px;"> ▶</span>&nbsp;&nbsp;SHOP NOW</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="40" style="line-height:1px;font-size:1px;height:40px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--3 Col-->
+                            <!--Image Left Text Right with btn-->
+                            <table class="mktoModule" mktoName="2 Col Image Left with Button" id="imgleft1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
+                                                                                       " width="100%">
+                                <tr>
+                                    <td bgColor="#ffffff" valign="top" style="background-Color:#ffffff;vertical-align: top;">
+                                        <table class="inner_table2" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:800px;border-collapse: collapse;border-spacing: 0;" border="0" width="800">
+                                            <tr>
+                                                <td height="20" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                        <tr>
+                                                            <th width="400" align="left" class="block2 center" valign="top" style="vertical-align: top;width:400px;">
+                                                                <div class="mktoImg" mktoname="Image" id="imgleft-img">
+                                                                    <img class="mobileimg" src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" width="400" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px
+                                                                                        auto; border-spacing:0;width:400px;display:block;" />
+                                                                </div>
+                                                            </th>
+                                                            <th class="hidden2" width="20" tyle="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
+                                                            <th align="center" width="340" valign="middle" class="block2 top_pad" valign="top" style="vertical-align:middle;width:340px;text-align: center;">
+                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                                                    <tr>
+                                                                        <td align="center" style="font-family: 'Montserrat',Arial, sans-serif; font-size:12px; font-weight:400;line-height: 145%; mso-line-height-rule: exactly; color:#ff755e;text-align:
+                                                                                        center;text-transform: uppercase;">
+                                                                            <div class="mktoText" mktoName="SubHeadline" id="SubHeadline-text">
+                                                                                <div>New collection</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="10" style="line-height:1px;font-size:1px;height:10px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: 'Montserrat',Arial, sans-serif; font-size:26px; font-weight:900; line-height: 145%; mso-line-height-rule: exactly; color: #374b53;">
+                                                                            <div mktoName="Headline" id="imgleft-headline">
+                                                                                <div>NEW ITEM TITLE</div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="15" style="line-height:1px;font-size:1px;height:15px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td style="font-family: 'Montserrat',Arial, sans-serif; font-size: 14px; font-weight:300;line-height: 145%; mso-line-height-rule: exactly; color:#374b53;">
+                                                                            <div mktoName="Text" id="imgleft-copy">
+                                                                                <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td height="30" style="line-height:1px;font-size:1px;height:30px;">&nbsp;</td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="mktoText" id="banner-btns" mktoname="Button">
+                                                                                <div>
+                                                                                    <table cellpadding="0" cellspacing="0" border="0" align="center">
+                                                                                        <tbody>
+                                                                                            <tr>
+                                                                                                <td bgcolor="#ff755e" style="text-align: center; border:1px solid #ff755e; color:#ffffff; background-color:#ff755e;text-decoration:none;font-size:12px;font-weight:400;
+                                                                                        line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 15px 26px; border-radius:3px;">
+                                                                                                    <a style="text-decoration:none; color:#ffffff" href="#"><span style="font-size:12px;"> ▶</span>&nbsp;&nbsp;EXPLORE NOW</a>
+                                                                                                </td>
+                                                                                            </tr>
+                                                                                        </tbody>
+                                                                                    </table>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </table>
+                                                            </th>
+                                                            <th class="hidden2" width="40" tyle="font-size:1px; line-height: 1px;" width="40">&nbsp;</th>
+                                                        </tr>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="40" style="line-height:1px;font-size:1px;width:40px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Image Left Text Right with btn-->
+
+
+
+
+
                             <!--Copy Module-->
                             <table class="mktoModule" mktoName="Free Text Module" id="CopyModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                 <tr>
@@ -1065,121 +1446,9 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--Copy Module-->
-
-                            <!--Button Module-->
-                            <table class="mktoModule" mktoName="Button Module" id="btnModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                <tr>
-                                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
-                                            <tr>
-                                                <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div id="btn" mktoname="Button">
-                                                        <div>
-                                                            <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none;
-                                                    font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
-                                                                            <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
-                                                                        </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!--Button Module-->
-
-                            <!--Image Left Text Right with btn-->
-                            <table class="mktoModule" mktoName="2 Col Image Left with Button" id="imgleft1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
-                                                   " width="100%">
-                                <tr>
-                                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
-                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
-                                            <tr>
-                                                <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                                        <tr>
-                                                            <th width="236" align="left" class="block center" valign="top" style="vertical-align: top;">
-                                                                <div class="mktoImg" mktoname="Image" id="imgleft-img">
-                                                                    <div>
-                                                                        <img src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" width="236" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
-                                                    display:block;" />
-                                                                    </div>
-                                                                </div>
-                                                            </th>
-                                                            <th class="hidden" style="font-size:1px; line-height: 1px;" width="20">&nbsp;</th>
-                                                            <th align="left" class="block top_pad" valign="top" style="vertical-align: top;">
-                                                                <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
-                                                                    <tr>
-                                                                        <td style="font-family: 'Montserrat',Arial, sans-serif; font-size: ${headlineFontSize18}px; font-weight:700; line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};">
-                                                                            <div mktoName="Headline" id="imgleft-headline">
-                                                                                <div>Lorem Ipsum Dolor Sit Amet</div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td height="${head-btm_pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td style="font-family: 'Montserrat',Arial, sans-serif; font-size: ${CopySize}px; line-height: 145%; mso-line-height-rule: exactly; color: ${CopyColor}">
-                                                                            <div mktoName="Text" id="imgleft-copy">
-                                                                                <div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quas. </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td height="${cta-top-pad}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td>
-                                                                            <div id="imgleft-btn1" mktoname="Button">
-                                                                                <div>
-                                                                                    <table cellpadding="0" cellspacing="0" border="0">
-                                                                                        <tbody>
-                                                                                            <tr>
-                                                                                                <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none;
-                                                    font-size:${btnFontSize}px; line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
-                                                                                                    <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
-                                                                                                </td>
-                                                                                            </tr>
-                                                                                        </tbody>
-                                                                                    </table>
-                                                                                </div>
-                                                                            </div>
-                                                                        </td>
-                                                                    </tr>
-                                                                </table>
-                                                            </th>
-                                                        </tr>
-                                                    </table>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
-                            <!--Image Left Text Right with btn-->
                             <!--Image Right Text Left with btn-->
-                            <table class="mktoModule" mktoName="2 Col Image Right with Button" id="imgRight1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
-                                                   " width="100%">
+                            <table class="mktoModule" mktoName="2 Col Image Right with Button" id="imgRight1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;
+                                                                                       " border="0" width="100%">
                                 <tr>
                                     <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
@@ -1193,8 +1462,8 @@ font-family: Arial, serif !important;
                                                             <th dir="ltr" width="236" align="left" class="block center" valign="top" style="vertical-align: top;">
                                                                 <div class="mktoImg" mktoname="Image" id="imgRight-img">
                                                                     <div>
-                                                                        <img src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" width="236" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
-                                                    display:block;" />
+                                                                        <img src="https://dummyimage.com/236x235/EEF3F9/B3B8C4" width="236" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto;
+                                                                                        border-spacing:0; display:block;" />
                                                                     </div>
                                                                 </div>
                                                             </th>
@@ -1229,7 +1498,7 @@ font-family: Arial, serif !important;
                                                                                         <tbody>
                                                                                             <tr>
                                                                                                 <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none;
-                                                    font-size:${btnFontSize}px; line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
+                                                                                        font-size:${btnFontSize}px; line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
                                                                                                     <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
                                                                                                 </td>
                                                                                             </tr>
@@ -1254,8 +1523,8 @@ font-family: Arial, serif !important;
                             </table>
                             <!--Image Right Text Left with btn-->
                             <!--Sm Image Left Text Right with btn-->
-                            <table class="mktoModule" mktoName="2 Col Small Image Left with btn" id="smimgleft1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
-                                                   " width="100%">
+                            <table class="mktoModule" mktoName="2 Col Small Image Left with btn" id="smimgleft1" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;
+                                                                                       " border="0" width="100%">
                                 <tr>
                                     <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
@@ -1269,8 +1538,8 @@ font-family: Arial, serif !important;
                                                             <th width="170" align="left" class="block center" valign="top" style="vertical-align: top;">
                                                                 <div class="mktoImg" mktoname="Image" id="smimgleft-img">
                                                                     <div>
-                                                                        <img src="https://dummyimage.com/170x170/EEF3F9/B3B8C4" width="170" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
-                                                    display:block;" />
+                                                                        <img src="https://dummyimage.com/170x170/EEF3F9/B3B8C4" width="170" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto;
+                                                                                        border-spacing:0; display:block;" />
                                                                     </div>
                                                                 </div>
                                                             </th>
@@ -1309,7 +1578,8 @@ font-family: Arial, serif !important;
                             </table>
                             <!--Image Left Text Right with btn-->
                             <!--Divider Module-->
-                            <table class="mktoModule" mktoName="Divider Module" id="DividerModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" mktoName="Divider Module" id="DividerModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
+                                                                                       " width="100%">
                                 <tr>
                                     <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
                                         <table class="" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="${DividerWidth}%">
@@ -1327,10 +1597,43 @@ font-family: Arial, serif !important;
                                 </tr>
                             </table>
                             <!--Divider Module-->
-
+                            <!--Button Module-->
+                            <table class="mktoModule" mktoName="Button Module" id="btnModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                                <tr>
+                                    <td bgColor="${mod-bg-color}" valign="top" style="background-Color:${mod-bg-color};vertical-align: top;">
+                                        <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
+                                            <tr>
+                                                <td height="${top_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div id="btn" mktoname="Button">
+                                                        <div>
+                                                            <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td bgcolor="${btnBGColor}" style="font-weight:${btnFontWeight}; text-align: center;border:1px solid ${btnBorderColor}; color:${btnColor}; background-color:${btnBGColor};text-decoration:none;
+                                                                                        font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
+                                                                            <a style="text-decoration:none; color:${btnColor};" href="${btnURL}">${btnText}</a>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td height="${btm_pad20}" style="line-height:1px;font-size:1px;">&nbsp;</td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--Button Module-->
                             <!--Video Headline Module-->
-                            <table class="mktoModule" mktoName="Video Headline Module" id="Video-Headline-mod" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
-                                                   " width="100%">
+                            <table class="mktoModule" mktoName="Video Headline Module" id="Video-Headline-mod" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;
+                                                                                       " border="0" width="100%">
                                 <tr>
                                     <td bgColor="${bannerLight-bg-Color}" valign="top" style="background-Color:${bannerLight-bg-Color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
@@ -1339,7 +1642,7 @@ font-family: Arial, serif !important;
                                             </tr>
                                             <tr>
                                                 <td align="${alignCenter}" style="font-family: 'Montserrat',Arial, sans-serif; font-size: ${headlineFontSize18}px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColor};
-                                                    text-align: ${alignCenter};">
+                                                                                        text-align: ${alignCenter};">
                                                     <div mktoName="Headline" id="Video-Headline">
                                                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                                                     </div>
@@ -1354,7 +1657,8 @@ font-family: Arial, serif !important;
                             </table>
                             <!--Video Headline Module-->
                             <!--Video Text Module-->
-                            <table class="mktoModule" mktoName="Video - Text" id="Video-TextModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" mktoName="Video - Text" id="Video-TextModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
+                                                                                       " width="100%">
                                 <tr>
                                     <td bgColor="${bannerLight-bg-Color}" valign="top" style="background-Color:${bannerLight-bg-Color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
@@ -1378,7 +1682,8 @@ font-family: Arial, serif !important;
                             </table>
                             <!--Video Text Module-->
                             <!--Updated Video Module-->
-                            <table class="mktoModule" mktoName="Video Image Module" id="videomodule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" mktoName="Video Image Module" id="videomodule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
+                                                                                       " width="100%">
                                 <tr>
                                     <td bgColor="${bannerLight-bg-Color}" valign="top" style="background-color:${bannerLight-bg-Color};vertical-align: top;">
                                         <table class="inner_table vidMod ${alignCenter}" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:450px;border-collapse: collapse;border-spacing: 0;" border="0" width="450">
@@ -1399,14 +1704,15 @@ font-family: Arial, serif !important;
                                                                 <table cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
                                                                     <tr>
                                                                         <td height="${video-top_pad}" style="line-height:1px;font-size:20px;color:transparent;"><a target="_blank" href="${video_link}" style="display: block; height: ${video-top_pad}px;
-                                                    color: transparent;text-decoration:none;">&nbsp;</a></td>
+                                                                                        color: transparent;text-decoration:none;">&nbsp;</a></td>
                                                                     </tr>
                                                                     <tr>
                                                                         <td class="center" align="center" style="font-size: 1px; line-height: 1px;">
                                                                             <a target="_blank" href="${video_link}">
                                                                                 <div>
 
-                                                                                    <img src="${vidPlayBtn}" width="50px" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0; display:block;height:auto;width:50px;" />
+                                                                                    <img src="${vidPlayBtn}" width="50px" border="0" style="-ms-interpolation-mode:bicubic; border-collapse:collapse; padding:0px; margin:0px auto; border-spacing:0;
+                                                                                        display:block;height:auto;width:50px;" />
 
                                                                                 </div>
                                                                             </a>
@@ -1414,7 +1720,7 @@ font-family: Arial, serif !important;
                                                                     </tr>
                                                                     <tr>
                                                                         <td height="${video-btm_pad}" style="line-height:1px;font-size:20px;color:transparent;"><a target="_blank" href="${video_link}" style="display: block; height: ${video-btm_pad}px;
-                                                    color: transparent;text-decoration:none;">&nbsp;</a></td>
+                                                                                        color: transparent;text-decoration:none;">&nbsp;</a></td>
                                                                     </tr>
 
                                                                 </table>
@@ -1440,7 +1746,7 @@ font-family: Arial, serif !important;
 
                             <!--CTA Headline Module-->
                             <table class="mktoModule" mktoName="CTA Headline Module" id="btn-Headline-mod" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
-                                                   " width="100%">
+                                                                                       " width="100%">
                                 <tr>
                                     <td bgcolor="${bannerdark-bg-Color}" valign="top" style="background-color:${bannerdark-bg-Color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
@@ -1449,7 +1755,7 @@ font-family: Arial, serif !important;
                                             </tr>
                                             <tr>
                                                 <td align="${alignCenter}" style="font-family: 'Montserrat',Arial, sans-serif; font-size: ${headlineFontSize28}px; font-weight:bold;line-height: 145%; mso-line-height-rule: exactly; color: ${headlineFontColorwhite};
-                                                    text-align: ${alignCenter};">
+                                                                                        text-align: ${alignCenter};">
                                                     <div mktoName="Headline" id="btn-Headline">
                                                         <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
                                                     </div>
@@ -1465,7 +1771,7 @@ font-family: Arial, serif !important;
                             <!--btn Headline Module-->
                             <!--btn Text Module-->
                             <table class="mktoModule" mktoName="Bottom CTA - Text" id="btn-TextModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
-                                                   " width="100%">
+                                                                                       " width="100%">
                                 <tr>
                                     <td bgColor="${bannerdark-bg-Color}" valign="top" style="background-Color:${bannerdark-bg-Color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
@@ -1489,7 +1795,8 @@ font-family: Arial, serif !important;
                             </table>
                             <!--CTA Text Module-->
                             <!--Dark CTA Module-->
-                            <table class="mktoModule" mktoName="Dark CTA Module" id="btn-btnModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0" width="100%">
+                            <table class="mktoModule" mktoName="Dark CTA Module" id="btn-btnModule" cellpadding="0" align="center" cellspacing="0" style="margin:0 auto;width:100%;border-collapse: collapse;border-spacing: 0;" border="0
+                                                                                       " width="100%">
                                 <tr>
                                     <td bgColor="${bannerdark-bg-Color}" valign="top" style="background-Color:${bannerdark-bg-Color};vertical-align: top;">
                                         <table class="inner_table" cellpadding="0" cellspacing="0" align="center" style="margin:0 auto; width:720px;border-collapse: collapse;border-spacing: 0;" border="0" width="720">
@@ -1503,8 +1810,8 @@ font-family: Arial, serif !important;
                                                             <table cellpadding="0" cellspacing="0" border="0" align="${alignCenter}">
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td bgcolor="${btnBGColorhead}" style="text-align: center;border:1px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead};text-decoration:none; font-size:${btnFontSize}px;font-weight:${btnFontWeight};
-                                                    line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
+                                                                        <td bgcolor="${btnBGColorhead}" style="text-align: center;border:1px solid ${btnBorderColorhead}; color:${btnColorhead}; background-color:${btnBGColorhead};text-decoration:none;
+                                                                                        font-size:${btnFontSize}px;font-weight:${btnFontWeight}; line-height:110%; font-family: 'Montserrat',Arial, sans-serif; padding: 13px 35px; border-radius: ${btnBorderRadius}px;">
                                                                             <a style="text-decoration:none; color:${btnColorhead};" href="${btnURL}">${btnText2}</a>
                                                                         </td>
                                                                     </tr>
